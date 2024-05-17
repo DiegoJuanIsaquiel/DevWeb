@@ -1,1 +1,53 @@
-<p>home works!</p>
+<main class="main">
+    <aside class="sidebar">
+        <div class="content">
+            <ul class="nav-list">
+                <span class="list-title">Usuário</span>
+                <li class="list-item">Adicionar Usuário</li>
+                <li class="list-item"> <a [routerLink]="['/pages/users']">Listar Usuários</a></li>
+            </ul>
+        </div>
+    </aside>
+    <div class="content">
+        <header>
+            <div class="card-container">
+                <div class="left-side">
+                    <h2>Usuários Cadastrados</h2>
+                    <span>32</span>
+                </div>
+                <div class="right-side">
+                    <div class="icon">
+                        <mat-icon aria-hidden="false" fontIcon="person"></mat-icon>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <table class="table">
+            <h3>Quantidade de usuários por funções</h3>
+            <thead>
+              <tr>
+                <th scope="col">Função</th>
+                <th scope="col">Qtd. Funcionários</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Engenheiro de FE</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>Engenheiro de BE</td>
+                <td>48</td>
+              </tr>
+              <tr>
+                <td>Analista de Dados</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Lider Técnico</td>
+                <td>9</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</main>

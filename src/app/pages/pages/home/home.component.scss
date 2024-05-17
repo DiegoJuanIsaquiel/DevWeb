@@ -1,0 +1,112 @@
+.main {
+    display: flex;
+
+    .sidebar {
+        background-color: #fff;
+        box-shadow: 0 0 25rem #ddd;
+
+        width: 15vw;
+        height: 100vh;
+
+        .content {
+            padding: 5vh 1.2vw 0 1.2vw;
+
+            .nav-list {
+                list-style-type: none;
+                padding: 0;
+
+                span {
+                    font-weight: 700;
+                }
+
+                .list-item {
+                    cursor: pointer;
+                    font-size: 0.8vw;
+                    padding-left: 1vw;
+
+                    a {
+                        text-decoration: none;
+                        color: #525F7F;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        header {
+            background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+            display: flex;
+            align-items: center;
+
+            width: 85vw;
+            height: 24vh;
+
+            .card-container {
+                background-color: #fff;
+                border-radius: 0.8vw;
+                box-shadow: 0 0 19px 0px rgba(200, 200, 200, 0.3);
+
+                display: flex;
+                justify-content: space-around;
+                gap: 3.2vw;
+
+                margin: 0 3.2vw;
+                padding: 1.2vw;
+
+                width: max-content;
+
+                .left-side {
+                    display: flex;
+                    flex-direction: column;
+
+                    h2 {
+                        font-size: 0.8vw;
+                        font-weight: 600;
+                    }
+
+                    span {
+                        font-size: 1.2vw;
+                        font-weight: 700;
+                    }
+                }
+
+                .right-side .icon {
+                    background-color: #fb6340 !important;
+                    border-radius: 50%;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    height: 2.2vw;
+                    width: 2.2vw;
+
+                    mat-icon {
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+
+        table {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            border: 1px solid rgba(0, 0, 0, .05);
+            border-radius: 0.375rem;
+            background-color: #fff;
+            background-clip: border-box;
+
+            margin: 3.2vw;
+            padding: 2.4vw;
+
+            tr {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0.8vh 0;
+            }
+        }
+    }
+}
