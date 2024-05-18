@@ -1,0 +1,41 @@
+<main class="main">
+    <aside class="sidebar">
+        <div class="content">
+            <ul class="nav-list">
+                <span class="list-title">Usuário</span>
+                <li class="list-item">Adicionar Usuário</li>
+                <li class="list-item"> <a [routerLink]="['/pages/users']">Listar Usuários</a></li>
+            </ul>
+        </div>
+    </aside>
+    <div class="content">
+        <header>
+            <h1>Criar Usuário</h1>
+        </header>
+        <div class="content">
+            <form [formGroup]="formGroup" class="form">
+                <div class="input-item grid-1">
+                    <input type="text" formControlName="name" placeholder="Insira o nome do usuário...">
+                </div>
+                <div class="input-item grid-2">
+                    <input type="email" formControlName="email" placeholder="Insira o e-mail do usuário...">
+                </div>
+                <div class="input-item grid-3">
+                    <select formControlName="function">
+                        <option value="'none'" disabled selected>Selecione a função do usuário</option>
+                        <option value="Engenheiro de BE">Engenhheiro de BE</option>
+                        <option value="Engenheiro de FE">Engenheiro de FE</option>
+                        <option value="Analista de Dados">Analista de Dados</option>
+                        <option value="Líder técnico">Líder técnico</option>
+                    </select>
+                </div>
+                <div class="input-item grid-4">
+                    <input type="password" formControlName="password" placeholder="Insira a senha do usuário...">
+                </div>
+                <div class="input-item grid-5">
+                    <input type="submit" (click)="onSubmit()" [disabled]="!this.formGroup.valid" value="Criar Usuário">
+                </div>
+            </form>
+        </div>
+    </div>
+</main>

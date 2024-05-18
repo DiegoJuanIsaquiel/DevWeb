@@ -17,6 +17,7 @@ const routes: Routes = [
     component: PagesComponent,
     children: [
       { path: 'home', loadChildren: () => import('./home/home.module').then((m) => m.HomeModule) },
+      { path: 'users/create', loadChildren: () => import('./add-users/add-users.module').then((m) => m.AddUsersModule) },
       { path: '**', redirectTo: 'home' },
     ],
   },

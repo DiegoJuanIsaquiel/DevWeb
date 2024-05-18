@@ -1,0 +1,126 @@
+.main {
+    display: flex;
+  
+    .sidebar {
+      background-color: #fff;
+      box-shadow: 0 0 25rem #ddd;
+  
+      width: 15vw;
+      height: 100vh;
+  
+      .content {
+        padding: 5vh 1.2vw 0 1.2vw;
+  
+        .nav-list {
+          list-style-type: none;
+          padding: 0;
+  
+          span {
+            font-weight: 700;
+          }
+  
+          .list-item {
+            cursor: pointer;
+            font-size: 0.8vw;
+            padding-left: 1vw;
+  
+            a {
+              text-decoration: none;
+              color: #525F7F;
+            }
+          }
+        }
+      }
+    }
+  
+    .content {
+      &>header {
+        background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+        display: flex;
+        align-items: center;
+  
+        width: 85vw;
+        height: 24vh;
+  
+        h1 {
+          margin: 0 3vw;
+          color: #fff;
+        }
+      }
+  
+      .content {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        border: 1px solid rgba(0, 0, 0, .05);
+        border-radius: 0.375rem;
+        background-color: #fff;
+        background-clip: border-box;
+  
+        margin: -3.2vh 3.2vw 3.2vw 3.2vw;
+  
+        .form {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          grid-column-gap: 0px;
+          grid-row-gap: 0px;
+          padding: 1.6vw;
+  
+          .input-item {
+            input, select {
+              width: 90%;
+              border: 1px solid #ddd;
+              padding: 0.8vw;
+              border-radius: 0.6vw;
+              margin: 0.8vw 1vw;
+  
+              &:focus{
+                outline: none;
+              }
+            }
+  
+            select {
+              width: 95%;
+            }
+  
+            input[type="submit"] {
+              width: 30%;
+              padding: 0.6vw;
+              color: #fff;
+              background-color: #77cc6d;
+              border: none;
+              border-radius: 0.2vw;
+              cursor: pointer;
+            }
+          }
+  
+          .grid-1 {
+            grid-area: 1 / 1 / 2 / 2;
+          }
+  
+          .grid-2 {
+            grid-area: 1 / 2 / 2 / 3;
+          }
+  
+          .grid-3 {
+            grid-area: 2 / 1 / 3 / 2;
+          }
+  
+          .grid-4 {
+            grid-area: 2 / 2 / 3 / 3;
+          }
+  
+          .grid-5 { 
+            grid-area: 3 / 2 / 4 / 3;
+            display: flex;
+            justify-content: flex-end;
+          }
+  
+        }
+  
+      }
+  
+  
+    }
+  }
