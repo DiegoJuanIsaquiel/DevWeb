@@ -19,6 +19,7 @@ const routes: Routes = [
       { path: 'home', loadChildren: () => import('./home/home.module').then((m) => m.HomeModule) },
       { path: 'users/', loadChildren: () => import('./list-users/list-users.module').then((m) => m.ListUsersModule)},
       { path: 'users/create', loadChildren: () => import('./add-users/add-users.module').then((m) => m.AddUsersModule) },
+      { path: 'users/edit', loadChildren: () => import('./add-users/add-users.module').then((m) => m.AddUsersModule) },
       { path: '**', redirectTo: 'home' },
     ],
   },
