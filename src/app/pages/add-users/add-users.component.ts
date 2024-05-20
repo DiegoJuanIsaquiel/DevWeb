@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
+import { UserFunctionsEnum } from 'src/app/models/user-functions-enum';
 
 @Component({
   selector: 'app-add-users',
@@ -23,6 +24,19 @@ export class AddUsersComponent {
       password: ['', Validators.required],
     });
 
+    this.router.url.toString().includes("create") ?
+      this.isCreating = true :
+      this.isCreating = false;
+
+    if(!this.isCreating){
+      this.formGroup.setValue({
+        name: "John Doe",
+        email: "john.doe@email.com",
+        function: this.userFunctionsEnum.DATA_ANALIST,
+        password: "admin123",
+      })
+    }
+
   }
 
   //#endregion
@@ -30,7 +44,11 @@ export class AddUsersComponent {
   //#region Public Properties
 
   public formGroup!: FormGroup;
-  
+
+  public userFunctionsEnum: typeof UserFunctionsEnum = UserFunctionsEnum;
+
+  public isCreating: boolean = true;
+
   //#endregion
 
   //#region Public Methods
