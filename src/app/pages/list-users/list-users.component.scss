@@ -1,0 +1,128 @@
+.main {
+    display: flex;
+  
+    .sidebar {
+      background-color: #fff;
+      box-shadow: 0 0 25rem #ddd;
+  
+      width: 15vw;
+      height: 100vh;
+  
+      .content {
+        padding: 5vh 1.2vw 0 1.2vw;
+  
+        .nav-list {
+          list-style-type: none;
+          padding: 0;
+  
+          span {
+            font-weight: 700;
+          }
+  
+          .list-item {
+            cursor: pointer;
+            font-size: 0.8vw;
+            padding-left: 1vw;
+  
+            a {
+              text-decoration: none;
+              color: #525F7F;
+            }
+          }
+        }
+      }
+    }
+  
+    .content {
+      &>header {
+        background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+        display: flex;
+        align-items: center;
+  
+        width: 85vw;
+        height: 24vh;
+      }
+  
+      table {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        border: 1px solid rgba(0, 0, 0, .05);
+        border-radius: 0.375rem;
+        background-color: #fff;
+        background-clip: border-box;
+  
+        margin: -3.2vh 3.2vw 3.2vw 3.2vw;
+  
+        header {
+          display: flex;
+          justify-content: space-between;
+          margin: 1.8vw;
+  
+          h3 {
+            font-size: .9vw;
+          }
+  
+          button {
+            border: none;
+            border-color: #5e72e4;
+            background-color: #5e72e4;
+            border-radius: 0.8vw;
+  
+            color: #fff;
+            cursor: pointer;
+  
+            padding: 1.8vh 1.2vw;
+            height: max-content;
+  
+            &:hover {
+              transform: translateY(-1px);
+              box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+              transition: .5s;
+            }
+          }
+  
+        }
+  
+        thead {
+          color: #8898aa;
+          background-color: #f6f9fc;
+          border-top: 1px solid #8898aa3d;
+          border-bottom: 1px solid #8898aa3d;
+          padding: 0 1.8vw;
+        }
+  
+        tr {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin: 0.8vh 0;
+  
+          border-bottom: 1px solid rgba(0, 0, 0, .1);
+  
+          &:last-child {
+            border: none;
+          }
+        }
+  
+        tbody tr {
+          padding: 0.8vh 1.8vw;
+          width: auto !important;
+  
+          td {
+            mat-icon{
+              cursor: pointer;
+            }
+  
+            .edit{
+              color: #fb6340;
+            }
+  
+            .remove {
+              color: #f5365c;
+            }
+          }
+        }
+      }
+    }
+  }

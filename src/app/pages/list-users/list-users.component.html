@@ -1,0 +1,111 @@
+<main class="main">
+    <aside class="sidebar">
+        <div class="content">
+            <ul class="nav-list">
+                <span class="list-title">Usuário</span>
+                <li class="list-item"> <a [routerLink]="['/pages/users']">Adicionar Usuários</a></li>
+                <li class="list-item"> <a [routerLink]="['/pages/users']">Listar Usuários</a></li>
+            </ul>
+        </div>
+    </aside>
+    <div class="content">
+        <header></header>
+        <table class="table">
+            <header>
+                <h3>Abaixo a lista de usuários cadastrados</h3>
+                <button class="button" [routerLink]="['/pages/users/create']">Novo Usuário</button>
+            </header>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Função</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>Analista de Sistemas</td>
+                    <td>
+                        <mat-icon aria-hidden="false" fontIcon="edit" class="edit" [routerLink]="['/pages/users/edit']"></mat-icon>
+                        <mat-icon aria-hidden="false" fontIcon="close" class="remove"></mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>jane.smith@example.com</td>
+                    <td>Gerente de Projetos</td>
+                    <td>
+                        <mat-icon aria-hidden="false" fontIcon="edit" class="edit" [routerLink]="['/pages/users/edit']"></mat-icon>
+                        <mat-icon aria-hidden="false" fontIcon="close" class="remove"></mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Michael Johnson</td>
+                    <td>michael.johnson@example.com</td>
+                    <td>Engenheiro de Software</td>
+                    <td>
+                        <mat-icon aria-hidden="false" fontIcon="edit" class="edit" [routerLink]="['/pages/users/edit']"></mat-icon>
+                        <mat-icon aria-hidden="false" fontIcon="close" class="remove"></mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sarah Lee</td>
+                    <td>sarah.lee@example.com</td>
+                    <td>Designer UX/UI</td>
+                    <td>
+                        <mat-icon aria-hidden="false" fontIcon="edit" class="edit" [routerLink]="['/pages/users/edit']"></mat-icon>
+                        <mat-icon aria-hidden="false" fontIcon="close" class="remove"></mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td>David Williams</td>
+                    <td>david.williams@example.com</td>
+                    <td>Analista de Dados</td>
+                    <td>
+                        <mat-icon aria-hidden="false" fontIcon="edit" class="edit" [routerLink]="['/pages/users/edit']"></mat-icon>
+                        <mat-icon aria-hidden="false" fontIcon="close" class="remove"></mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Emily Brown</td>
+                    <td>emily.brown@example.com</td>
+                    <td>Desenvolvedor Front-end</td>
+                    <td>
+                        <mat-icon aria-hidden="false" fontIcon="edit" class="edit" [routerLink]="['/pages/users/edit']"></mat-icon>
+                        <mat-icon aria-hidden="false" fontIcon="close" class="remove"></mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td>James Wilson</td>
+                    <td>james.wilson@example.com</td>
+                    <td>Analista de Segurança</td>
+                    <td>
+                        <mat-icon aria-hidden="false" fontIcon="edit" class="edit" [routerLink]="['/pages/users/edit']"></mat-icon>
+                        <mat-icon aria-hidden="false" fontIcon="close" class="remove"></mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Olivia Anderson</td>
+                    <td>olivia.anderson@example.com</td>
+                    <td>Arquiteto de Soluções</td>
+                    <td>
+                        <mat-icon aria-hidden="false" fontIcon="edit" class="edit" [routerLink]="['/pages/users/edit']"></mat-icon>
+                        <mat-icon aria-hidden="false" fontIcon="close" class="remove"></mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td>William Martinez</td>
+                    <td>william.martinez@example.com</td>
+                    <td>Analista de Negócios</td>
+                    <td>
+                        <mat-icon aria-hidden="false" fontIcon="edit" class="edit" [routerLink]="['/pages/users/edit']"></mat-icon>
+                        <mat-icon aria-hidden="false" fontIcon="close" class="remove"></mat-icon>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
